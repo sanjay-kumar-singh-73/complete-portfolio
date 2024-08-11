@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ::-webkit-scrollbar{
+  display: none;
+} */
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    background-image: url(BG-Img\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.navbar nav{
+    display: flex;
+    gap: 20px;
+    margin-right: 70px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+nav a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #fff;
+}
+
+
+nav a:hover{
+   scale: 1.2;
+   filter: drop-shadow(0px 0px 10px black);
+   color: #fff;
+}
+
+
+navigation{
+    background: rgba(0,0,0,0.3);
+    width: max-content;
+    display: flex;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur (15px);
+    box-shadow: 0px 0px 10px white;
+}
+
+navigation li a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: .4s;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+navigation li a:hover{
+    background: yellow;
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 7px white);
+    color: #000;
+}
+
+.active{
+    background: yellow;
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 7px white);
+    color: #000;
+}
+
+/* =====================HOME PAGE================= */
+
+.home{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-image: url(BG-Img\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.home .home-content{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+.home-content h3{
+    color: rgb(117, 117, 14);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    /* margin-bottom: 7px; */
+    filter: drop-shadow(0px 0px 10px black);
+    color: #fff;
+}
+
+.home-content h1{
+    font-size: 25px;
+    font-weight: 600;
+    filter: drop-shadow(0px 0px 10px black);
+    color: #fff;
+}
+
+ .home-content h2{
+    font-size: 20px;
+    font-weight: 600;
+    filter: drop-shadow(0px 0px 10px black);
+    color: #fff;
+ }
+
+ .home-content span{
+    color: yellow;
+    font-size: 26px;
+    filter: drop-shadow(0px 0px 10px black);
+ }
+
+ .home-content p{
+    width: 70%;
+    font-size: 15px;
+    font-weight: 600;
+    filter: drop-shadow(0px 0px 10px black);
+    color: #fff;
+ }
+
+ .home-content button{
+    margin-top: 20px;
+ }
+
+.home-content .btn{
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    background: green;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.home-content .btn:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 30px;
+}
+
+.home .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-bottom: 120px;
+    filter: drop-shadow(0px 0px 10px blue);
+  }
+  
+  .home .image img{
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid blue;
+      box-shadow: 0px 0px 10px white;
+      filter: drop-shadow(0px 0px 10px blue);
+  }
+
+  /* =====================HOME PAGE END================== */
+
+
+
+  /* ===================ABOUT PAGE START====================== */
+
+  .about{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(BG-Img\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    gap: 10px;
+  }
+
+  .about .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 0px 10px blue);
+  }
+
+  .about .image img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid blue;
+    box-shadow: 0px 0px 10px white;
+    filter: drop-shadow(0px 0px 10px blue);
+  }
+
+  .about .about-content{
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .about-content h1{
+    filter: drop-shadow(0px 0px 10px white);
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(2, 2, 36);
+  }
+
+  .about-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    color:yellow;
+    filter: drop-shadow(0px 0px 10px black);
+  }
+
+  .about-content p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px black);
+  }
+
+  .about-content .button {
+    margin-top: 10px;
+    filter: drop-shadow(0px 0px 10px black);
+  }
+
+  .button .A-btn{
+    width: 170px;
+    height: 47px;
+    background:green;
+    font-size: 22px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid white;
+  }
+
+
+  .button .A-btn:hover{
+     scale: 1.1;
+     border-radius: 30px;
+     filter:drop-shadow(0px 0px 10px white);
+  }
+
+  /*==========================ABOUT END=============== */
+
+  /* ===========================SERVICE START=============== */
+
+  .service{
+    width: 100%;
+    height: 100vh;
+    background-image:url(BG-Img\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+
+.service .title{
+  padding-top: 20px;
+}
+
+  .service .title h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px black);
+  }
+
+   .service .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+    width: 100%;
+    height: 70vh;
+    margin-top: -50px;
+   }
+
+   .service .card article:hover{
+    /* scale: 1.1; */
+    background-color: blueviolet;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px black;
+    height: 400px;
+   }
+
+   .card article{
+    border: 2px solid white;
+    height: 60vh;
+    margin: 10px;
+    margin-top: 130px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px black;
+    text-align: center;
+    padding-top: 20px;
+    transition: .5s;
+   }
+
+   article h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 7px;
+    filter: drop-shadow(0px 0px 10px black);
+   }
+
+
+   article .icon i{
+      font-size: 25px;
+      margin-top: 5px;
+      color: #fff;
+      margin-bottom: 10px;
+   }
+
+   article p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px black);
+   }
+
+   article .button{
+   margin-top: 10px;
+   }
+
+   article .button .S-btn{
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:goldenrod;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    filter: drop-shadow(0px 0px 10px black);
+   }
+
+   article .button .S-btn:hover{
+     scale: 1.2;
+     border-radius:30px;
+     filter: drop-shadow(0px 0px 10px black);
+     font-size: 17px;
+   }
+
+   /* ================SERVICE END================ */
+
+   /* ================PORTFOLIO START============ */
+
+   .portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#00bcd4,#ffeb3b);
+   }
+   .Main-Card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+   }
+
+   .Main-Card .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 320px;
+    height: 350px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: .5s;
+    cursor: pointer;
+   }
+
+   .Main-Card .card:hover{
+    height: 400px;
+    scale: 1.1;
+   }
+
+   .Main-Card .card .imgBox{
+    position: relative;
+    top: 20px;
+    width: 250px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+   }
+
+   .Main-Card .card:hover .imgBox{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+   }
+
+   .Main-Card .card .imgBox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+
+
+.Main-Card .card .content{
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  padding: 0 30px;
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+  transition: .5s;
+}
+
+.Main-Card .card:hover .content{
+  top: 130px;
+  height: 250px;
+}
+
+.Main-Card .card .content h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: green;
+  filter: drop-shadow(0px 0px 10px black);
+}
+
+.Main-Card .card .content p{
+  color: #333;
+}
+.Main-Card .card .content a{
+  position:relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  background:green;
+  color: #fff;
+  font-weight:500;
+  text-decoration: none;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 10px black);
+  transition: .5s;
+}
+
+.Main-Card .card .content a:hover{
+   scale: 1.1;
+}
+
+/* ====================PORTFOLIO END================= */
+
+
+/* =======================CONTACT START============ */
+
+.contact{
+ width: 100%;
+ height: 100vh;
+  background: linear-gradient(45deg,rgb(13, 104, 18),#dfc907);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-div{
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+
+.main-div h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form input,
+form textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #333;
+  box-shadow: 0 0 5px #333;
+}
+form input:focus,
+form textarea:focus{
+  outline: none;
+  box-shadow: 0 0 5px #333;
+}
+
+form button{
+  display: block;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 150px;
+}
+
+form button:hover{
+  background: green;
+}
+
+/* ================================CONTACT END=============== */
+
+
+/* ==============================FOOTER START============== */
+
+.footer{
+  /* background: linear-gradient(45deg,rgb(30, 37, 31),#252202); */
+  background-color: rgb(2, 2, 39);
+  width: 100%;
+  height: 30vh;
+}
+
+.footer .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .content .main-content h1{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+  
+}
+
+.footer .content .main-content p{
+  width: 160px;
+  color:rgb(172, 124, 124);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+  filter: drop-shadow(0px 0px 10px black);
+}
+
+.main-content{
+ padding-bottom: 30px;
+}
+
+.footer .content .main-content .social-media a{
+  color: #fff;
+  font-size: 20px;
+  filter: drop-shadow(0px 0px 10px black);
+  gap: 5px;
+  margin-left: 20px;
+}
+.footer .Work{
+  padding-bottom: 20px;
+}
+
+.footer .Work h1{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.footer .Work h2{
+  font-size:15px;
+  color:rgb(172, 124, 124);
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.footer .Useful-Link{
+   padding-bottom: 10px;
+}
+.footer .Useful-Link h1{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.footer .Useful-Link h2{
+  font-size:15px;
+  color:rgb(172, 124, 124);
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.footer .Address{
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+.footer .Address h1{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.footer .Address h2{
+  font-size:15px;
+  color:rgb(172, 124, 124);
+  font-weight: 600;
+}
+
+.footer .copyright h3{
+   margin-top:-0px;
+  margin-left: 450px;
+  color: #fff;
+  color:rgb(172, 124, 124);
+  font-size: 15px;
+}
+/* =======================FOOTER END================= */
